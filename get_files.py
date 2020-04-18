@@ -14,14 +14,14 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--virus' ,type = str ,default = 'COVID-19')
 parser.add_argument('--x_ray_view' ,type = str ,default = 'PA')
-parser.add_argument('--outputDir' ,type = str ,default = r'D:\COMPUTERS\AI\dataset_and_embeddings\covid_dataset\covid')
+parser.add_argument('--outputDir' ,type = str ,default =..\covid_dataset\covid')
 args = parser.parse_args()
 
 virus = args.virus
 x_ray_view = args.x_ray_view
 outputDir = args.outputDir
-path = r'D:\COMPUTERS\AI\DEEP_LEARNING\COVID\covid-chestxray-dataset'
-metadata = r'D:\COMPUTERS\AI\DEEP_LEARNING\COVID\covid-chestxray-dataset\metadata.csv'
+path = '..\covid-chestxray-dataset'
+metadata = '..\covid-chestxray-dataset\metadata.csv'
 
 metadata_csv = pd.read_csv(metadata)
 
