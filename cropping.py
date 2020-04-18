@@ -10,6 +10,8 @@ from PIL import Image
 import os
 
 
+params = {'per_w' : 0.80 ,'per_h' : 0.85}
+
 def crop_and_save(img_dir ,per_w ,per_h ,save_dir = None):
     img = Image.open(img_dir)
     width, height = img.size   
@@ -23,11 +25,11 @@ def crop_and_save(img_dir ,per_w ,per_h ,save_dir = None):
         cropped.save(save_dir)
         
 if __name__ == '__main__':
-    directory = r'D:\COMPUTERS\AI\spare_copies\covid_dataset'
+    directory = '..\covid_dataset'
     folders = os.listdir(directory)
     for folder in folders:
         print(folder)
-        save_dir = r'D:\COMPUTERS\AI\dataset_and_embeddings\covid_cropped'
+        save_dir = '..\covid_cropped'
         os.mkdir(os.path.join(save_dir ,folder))
         save_dir = save_dir +'/'+ folder
         load_dir = directory +'/'+ folder
@@ -39,4 +41,4 @@ if __name__ == '__main__':
             for file in os.listdir(present_load_dir):
                 file_name = present_load_dir + '/' + file
                 present_save_dir = sub_save_dir + '/' + file
-                crop_and_save(file_name ,0.80 ,0.85 ,present_save_dir)
+                crop_and_save(file_name ,params['per_w'] ,params['per_h'] ,present_save_dir)
