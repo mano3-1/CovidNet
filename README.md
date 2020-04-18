@@ -13,4 +13,5 @@ Plans include:
 2. using self super learning to pretrain a CNN model with new data taken from various sources.
 3. fine tuining it on the classification task and getting Grad-cam heatmaps.
 4.creating a fully optimised pipeline for the above in one package
+
 Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is cheaper and safer than CT scans and almost all hospitals have them.
