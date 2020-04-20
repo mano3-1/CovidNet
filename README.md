@@ -18,10 +18,10 @@ Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is c
 Results look like:
 Normal Lungs(cropped input)
 
-!["Normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal.jpeg)
+!["Normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal%20normal.jpeg)
 
 gradcam of normal Lungs(cropped input) 
-!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/grad_cam_normal.jpeg)Covid 19 affected lungs(cropped input)
+!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal_gc.jpeg)Covid 19 affected lungs(cropped input)
 
 !["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/covid.jpeg)
 
@@ -31,8 +31,8 @@ Grad cam of covid 19 affected lungs(cropped input)
 
 The above results were obtained by using an esnsemble of two classification models and their combined Grad-CAM heatmaps.
 The inputs are cropped to focus on the lungs using the lungs segmentation model specified above.
-The first model is pretraied on Non croppped pneumonia dataset and fine tuned on the cropped covid data set.
-The oher model is pretraied on croppped pneumonia dataset and fine tuned on the cropped covid data set.
+The first model is pretraied on Non croppped pneumonia dataset and fine tuned on the center cropped covid data set.
+The oher model is pretraied on croppped pneumonia dataset and fine tuned on the cropped covid data set using segmentataion model.
 
 
 
