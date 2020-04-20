@@ -15,17 +15,13 @@ Plans include:
 4.creating a fully optimised pipeline for the above in one package
 
 Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is cheaper and safer than CT scans and almost all hospitals have them.
-Results look like:
+Results look like:Normal Lungs(cropped input)
 
-
-
-Normal Lungs(cropped input)
 !["Normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal.jpeg)
 
 gradcam of normal Lungs(cropped input) 
-!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/grad_cam_normal.jpeg)
+!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/grad_cam_normal.jpeg)Covid 19 affected lungs(cropped input)
 
-Covid 19 affected lungs(cropped input)
 !["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/covid.jpeg)
 
 Grad cam of covid 19 affected lungs(cropped input)
