@@ -16,13 +16,15 @@ Plans include:
 
 Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is cheaper and safer than CT scans and almost all hospitals have them.
 Results look like:
-![Normal Lungs](https://github.com/mano3-1/CovidNet/blob/master/results/normal.jpeg)
 
-![gradcam of normal Lungs](https://github.com/mano3-1/CovidNet/blob/master/results/grad_cam_normal.jpeg)
 
-![Covid 19 affected lungs](https://github.com/mano3-1/CovidNet/blob/master/results/covid.jpeg)
 
-![Grad cam of covid 19 affected lungs](https://github.com/mano3-1/CovidNet/blob/master/results/gradcam_covid.jpeg)
+
+!["Normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal.jpeg)!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/grad_cam_normal.jpeg)
+
+
+!["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/covid.jpeg)!["Grad cam of covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/gradcam_covid.jpeg)
+
 
 The above results were obtained by using an esnsemble of two classification models and their combined Grad-CAM heatmaps.
 The inputs are cropped to focus on the lungs using the lungs segmentation model specified above.
