@@ -1,4 +1,7 @@
 # CovidNet
+Run the Inference.ipynb in colab by opening it and clicking it on open in colab button.
+
+
 segmetation model is taken from:https://www.kaggle.com/nikhilpandey360/lung-segmentation-from-chest-x-ray-dataset
 
 covid data is taken from:https://github.com/ieee8023/covid-chestxray-dataset
