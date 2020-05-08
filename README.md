@@ -19,23 +19,20 @@ Plans include:
 
 Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is cheaper and safer than CT scans and almost all hospitals have them.
 Results look like:
-Normal Lungs(cropped input)
 
-!["Normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal%20normal.jpeg)
-
-gradcam of normal Lungs(cropped input) 
-!["gradcam of normal Lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/normal_gc.jpeg)Covid 19 affected lungs(cropped input)
-
-!["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/covid.jpeg)
+Covid 19 affected lungs(cropped input)
+!["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/sample.jpeg)
 
 Grad cam of covid 19 affected lungs(cropped input)
-!["Grad cam of covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/results/gradcam_covid.jpeg)
+!["Grad cam of covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/covid.PNG)
+
+pneumonia affected Lungs(cropped input)
+
+!["pneumonia affected Lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/PNEUMONIA.jpeg)
+
+gradcam of normal Lungs(cropped input) 
+!["gradcam of pneumonia affected Lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/pneumonia.PNG)
 
 
-The above results were obtained by using an esnsemble of two classification models and their combined Grad-CAM heatmaps.
-The inputs are cropped to focus on the lungs using the lungs segmentation model specified above.
-The first model is pretraied on Non croppped pneumonia dataset and fine tuned on the center cropped covid data set.
-The oher model is pretraied on croppped pneumonia dataset and fine tuned on the cropped covid data set using segmentataion model.
-
-
+The above results are obtained by training Denoising autoencoder on augmeneted cropped pneumonia dataset and then encoder is taken and re trained it on covid data for classification.But due to high bias in the data the accuracy score it little bit low.We are trying to improve it by using various methods such as outlier detection by generative models(using variational autoencoders to detect the outliers) and active learning.
 
