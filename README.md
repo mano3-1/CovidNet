@@ -21,9 +21,11 @@ Reason to choose X-ray scans and not CT scans is due to the fact that x-ray is c
 Results look like:
 
 Covid 19 affected lungs<br/>
+
 !["Covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/sample.jpeg)<br/>
 
 Grad cam of covid 19 affected lungs(input was cropped using Bounding Box model)<br/>
+
 !["Grad cam of covid 19 affected lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/covid.PNG)<br/>
 
 pneumonia affected Lungs<br/>
@@ -31,6 +33,7 @@ pneumonia affected Lungs<br/>
 !["pneumonia affected Lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/PNEUMONIA.jpeg)<br/>
 
 gradcam of normal Lungs(input was cropped using Bounding Box model) <br/>
+
 !["gradcam of pneumonia affected Lungs"](https://github.com/mano3-1/CovidNet/blob/master/denoising%20autoencoder/gradcams/pneumonia.PNG)<br/>
 
 
