@@ -6,7 +6,7 @@ precision score : 0.8809523809523809<br/>
 recall score : 0.8809523809523809<br/>
 f1 score : 0.8809523809523809<br/>
 confusion matrix of the above mentioned model :<br/>
-!["confusion matrix"](https://github.com/mano3-1/CovidNet/blob/master/jupyter_notebooks_for_training/images/cm2.PNG)
+!["confusion matrix"](https://github.com/mano3-1/CovidNet/blob/master/jupyter_notebooks_for_training/images/cm2.PNG)<br/>
 To get more efficiency we imported pretrained segmentation model and cropped the dataset by using that segmentation model(link was provided) and trained it on the dataset. The standard metrcis for the model rae as followes:<br/>
 accuracy score : 0.8571428571428571<br/>
 precision score : 0.8571428571428571<br/>
